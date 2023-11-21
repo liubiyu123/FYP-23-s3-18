@@ -5,14 +5,14 @@ import tensorflow as tf
 import os
 import requests
 
-# def download_model():
-#     url = "URL_TO_MODEL.tflite"  # Replace with the direct download link
-#     r = requests.get(url)
-#     with open('model.tflite', 'wb') as f:
-#         f.write(r.content)
+def download_model():
+    url = "URL_TO_MODEL.tflite"  # Replace with the direct download link
+    r = requests.get(url)
+    with open('model.tflite', 'wb') as f:
+        f.write(r.content)
 
-# download_model()
-# # Load the model as usual after this
+download_model()
+# Load the model as usual after this
 
 app = Flask(__name__)
 
