@@ -6,7 +6,7 @@ import os
 import requests
 
 def download_model():
-    url = "URL_TO_MODEL.tflite"  # Replace with the direct download link
+    url = "https://github.com/liubiyu123/FYP-23-s3-18/raw/main/model.tflite"  # Replace with the direct download link
     r = requests.get(url)
     with open('model.tflite', 'wb') as f:
         f.write(r.content)
